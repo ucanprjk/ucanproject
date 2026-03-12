@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects</title>
+
+<link rel="icon" type="image/png" href="img/avatar.png">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<script>
+
+window.addEventListener("load",function(){
+
+document.getElementById("loader").style.display="none";
+
+});
+
+</script>
+
+<body>
+
+<div id="loader">
+    
+<h1>UCAN PROJECT</h1>
+<p>Loading system...</p>
+</div>
+
+<nav>
+
+<h2 class="logo">UCAN</h2>
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+
+<ul id="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="projects.html" class="active">Projects</a></li>
+<li><a href="dev.html">Developers</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="social.html">Social</a></li>
+
+</ul>
+
+</nav>
+
+<h1 class="title">My Projects</h1>
+
+<div class="tools">
+
+<input type="text" id="search" placeholder="Search project...">
+
+<select id="filter">
+<option value="all">All</option>
+<option value="magisk">Magisk</option>
+<option value="zram">ZRAM</option>
+<option value="kernel">KERNEL</option>
+<option value="modul mtk">MODUL MTK</option>
+<option value="universal">UNIVERSAL</option>
+<option value="tweak">TWEAK</option>
+<option value="snapdragon">Snapdragon</option>
+</select>
+
+</div>
+
+<div id="loading">Loading projects...</div>
+
+<div id="repos"></div>
+
+<script src="js/repos.js"></script>
+<script src="js/menu.js"></script>
+</body>
+</html>
